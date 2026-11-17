@@ -1,0 +1,377 @@
+[33m3f47d0b[m Initial commit - Nyx Assistant
+ armazenamento/armazenamento.js                     |     26 [32m+[m
+ assets/avatar.png                                  |    Bin [31m0[m -> [32m389873[m bytes
+ dist/Nyx-win32-x64/LICENSE                         |     21 [32m+[m
+ dist/Nyx-win32-x64/LICENSES.chromium.html          | 360213 [32m++++++++++++++++++[m
+ dist/Nyx-win32-x64/Nyx.exe                         |    Bin [31m0[m -> [32m246302208[m bytes
+ dist/Nyx-win32-x64/chrome_100_percent.pak          |    Bin [31m0[m -> [32m719654[m bytes
+ dist/Nyx-win32-x64/chrome_200_percent.pak          |    Bin [31m0[m -> [32m1269017[m bytes
+ dist/Nyx-win32-x64/d3dcompiler_47.dll              |    Bin [31m0[m -> [32m4741488[m bytes
+ dist/Nyx-win32-x64/dxcompiler.dll                  |    Bin [31m0[m -> [32m25744384[m bytes
+ dist/Nyx-win32-x64/dxil.dll                        |    Bin [31m0[m -> [32m1509760[m bytes
+ dist/Nyx-win32-x64/ffmpeg.dll                      |    Bin [31m0[m -> [32m3113472[m bytes
+ dist/Nyx-win32-x64/icudtl.dat                      |    Bin [31m0[m -> [32m10875024[m bytes
+ dist/Nyx-win32-x64/locales/af.pak                  |    Bin [31m0[m -> [32m636155[m bytes
+ dist/Nyx-win32-x64/locales/am.pak                  |    Bin [31m0[m -> [32m1029450[m bytes
+ dist/Nyx-win32-x64/locales/ar.pak                  |    Bin [31m0[m -> [32m1130919[m bytes
+ dist/Nyx-win32-x64/locales/bg.pak                  |    Bin [31m0[m -> [32m1178203[m bytes
+ dist/Nyx-win32-x64/locales/bn.pak                  |    Bin [31m0[m -> [32m1513545[m bytes
+ dist/Nyx-win32-x64/locales/ca.pak                  |    Bin [31m0[m -> [32m716908[m bytes
+ dist/Nyx-win32-x64/locales/cs.pak                  |    Bin [31m0[m -> [32m743351[m bytes
+ dist/Nyx-win32-x64/locales/da.pak                  |    Bin [31m0[m -> [32m666471[m bytes
+ dist/Nyx-win32-x64/locales/de.pak                  |    Bin [31m0[m -> [32m717862[m bytes
+ dist/Nyx-win32-x64/locales/el.pak                  |    Bin [31m0[m -> [32m1295538[m bytes
+ dist/Nyx-win32-x64/locales/en-GB.pak               |    Bin [31m0[m -> [32m580030[m bytes
+ dist/Nyx-win32-x64/locales/en-US.pak               |    Bin [31m0[m -> [32m586582[m bytes
+ dist/Nyx-win32-x64/locales/es-419.pak              |    Bin [31m0[m -> [32m707627[m bytes
+ dist/Nyx-win32-x64/locales/es.pak                  |    Bin [31m0[m -> [32m703941[m bytes
+ dist/Nyx-win32-x64/locales/et.pak                  |    Bin [31m0[m -> [32m642216[m bytes
+ dist/Nyx-win32-x64/locales/fa.pak                  |    Bin [31m0[m -> [32m1063069[m bytes
+ dist/Nyx-win32-x64/locales/fi.pak                  |    Bin [31m0[m -> [32m655113[m bytes
+ dist/Nyx-win32-x64/locales/fil.pak                 |    Bin [31m0[m -> [32m741385[m bytes
+ dist/Nyx-win32-x64/locales/fr.pak                  |    Bin [31m0[m -> [32m763461[m bytes
+ dist/Nyx-win32-x64/locales/gu.pak                  |    Bin [31m0[m -> [32m1495625[m bytes
+ dist/Nyx-win32-x64/locales/he.pak                  |    Bin [31m0[m -> [32m928748[m bytes
+ dist/Nyx-win32-x64/locales/hi.pak                  |    Bin [31m0[m -> [32m1586602[m bytes
+ dist/Nyx-win32-x64/locales/hr.pak                  |    Bin [31m0[m -> [32m715279[m bytes
+ dist/Nyx-win32-x64/locales/hu.pak                  |    Bin [31m0[m -> [32m765640[m bytes
+ dist/Nyx-win32-x64/locales/id.pak                  |    Bin [31m0[m -> [32m635080[m bytes
+ dist/Nyx-win32-x64/locales/it.pak                  |    Bin [31m0[m -> [32m693991[m bytes
+ dist/Nyx-win32-x64/locales/ja.pak                  |    Bin [31m0[m -> [32m842053[m bytes
+ dist/Nyx-win32-x64/locales/kn.pak                  |    Bin [31m0[m -> [32m1720240[m bytes
+ dist/Nyx-win32-x64/locales/ko.pak                  |    Bin [31m0[m -> [32m718705[m bytes
+ dist/Nyx-win32-x64/locales/lt.pak                  |    Bin [31m0[m -> [32m777281[m bytes
+ dist/Nyx-win32-x64/locales/lv.pak                  |    Bin [31m0[m -> [32m774733[m bytes
+ dist/Nyx-win32-x64/locales/ml.pak                  |    Bin [31m0[m -> [32m1767850[m bytes
+ dist/Nyx-win32-x64/locales/mr.pak                  |    Bin [31m0[m -> [32m1467313[m bytes
+ dist/Nyx-win32-x64/locales/ms.pak                  |    Bin [31m0[m -> [32m668356[m bytes
+ dist/Nyx-win32-x64/locales/nb.pak                  |    Bin [31m0[m -> [32m638121[m bytes
+ dist/Nyx-win32-x64/locales/nl.pak                  |    Bin [31m0[m -> [32m664759[m bytes
+ dist/Nyx-win32-x64/locales/pl.pak                  |    Bin [31m0[m -> [32m742064[m bytes
+ dist/Nyx-win32-x64/locales/pt-BR.pak               |    Bin [31m0[m -> [32m697019[m bytes
+ dist/Nyx-win32-x64/locales/pt-PT.pak               |    Bin [31m0[m -> [32m701056[m bytes
+ dist/Nyx-win32-x64/locales/ro.pak                  |    Bin [31m0[m -> [32m728144[m bytes
+ dist/Nyx-win32-x64/locales/ru.pak                  |    Bin [31m0[m -> [32m1200985[m bytes
+ dist/Nyx-win32-x64/locales/sk.pak                  |    Bin [31m0[m -> [32m755481[m bytes
+ dist/Nyx-win32-x64/locales/sl.pak                  |    Bin [31m0[m -> [32m722720[m bytes
+ dist/Nyx-win32-x64/locales/sr.pak                  |    Bin [31m0[m -> [32m1112909[m bytes
+ dist/Nyx-win32-x64/locales/sv.pak                  |    Bin [31m0[m -> [32m646543[m bytes
+ dist/Nyx-win32-x64/locales/sw.pak                  |    Bin [31m0[m -> [32m685127[m bytes
+ dist/Nyx-win32-x64/locales/ta.pak                  |    Bin [31m0[m -> [32m1758067[m bytes
+ dist/Nyx-win32-x64/locales/te.pak                  |    Bin [31m0[m -> [32m1629379[m bytes
+ dist/Nyx-win32-x64/locales/th.pak                  |    Bin [31m0[m -> [32m1368866[m bytes
+ dist/Nyx-win32-x64/locales/tr.pak                  |    Bin [31m0[m -> [32m697394[m bytes
+ dist/Nyx-win32-x64/locales/uk.pak                  |    Bin [31m0[m -> [32m1211563[m bytes
+ dist/Nyx-win32-x64/locales/ur.pak                  |    Bin [31m0[m -> [32m1047994[m bytes
+ dist/Nyx-win32-x64/locales/vi.pak                  |    Bin [31m0[m -> [32m830014[m bytes
+ dist/Nyx-win32-x64/locales/zh-CN.pak               |    Bin [31m0[m -> [32m592081[m bytes
+ dist/Nyx-win32-x64/locales/zh-TW.pak               |    Bin [31m0[m -> [32m583887[m bytes
+ dist/Nyx-win32-x64/resources.pak                   |    Bin [31m0[m -> [32m12436174[m bytes
+ .../resources/app/armazenamento/armazenamento.js   |     26 [32m+[m
+ dist/Nyx-win32-x64/resources/app/assets/avatar.png |    Bin [31m0[m -> [32m389873[m bytes
+ .../resources/app/lembretes/lembretes.js           |     64 [32m+[m
+ dist/Nyx-win32-x64/resources/app/main/index.html   |     50 [32m+[m
+ dist/Nyx-win32-x64/resources/app/main/main.js      |    184 [32m+[m
+ dist/Nyx-win32-x64/resources/app/main/preload.js   |      7 [32m+[m
+ dist/Nyx-win32-x64/resources/app/main/renderer.js  |    553 [32m+[m
+ dist/Nyx-win32-x64/resources/app/package.json      |     18 [32m+[m
+ dist/Nyx-win32-x64/resources/app/styles/estilo.css |    411 [32m+[m
+ dist/Nyx-win32-x64/snapshot_blob.bin               |    Bin [31m0[m -> [32m368768[m bytes
+ dist/Nyx-win32-x64/v8_context_snapshot.bin         |    Bin [31m0[m -> [32m742200[m bytes
+ dist/Nyx-win32-x64/version                         |      1 [32m+[m
+ dist/Nyx-win32-x64/vk_swiftshader.dll              |    Bin [31m0[m -> [32m5520384[m bytes
+ dist/Nyx-win32-x64/vk_swiftshader_icd.json         |      1 [32m+[m
+ dist/Nyx-win32-x64/vulkan-1.dll                    |    Bin [31m0[m -> [32m939520[m bytes
+ lembretes/lembretes.js                             |     64 [32m+[m
+ main/index.html                                    |     50 [32m+[m
+ main/main.js                                       |    184 [32m+[m
+ main/preload.js                                    |      7 [32m+[m
+ main/renderer.js                                   |    553 [32m+[m
+ node_modules/.bin/asar                             |     16 [32m+[m
+ node_modules/.bin/asar.cmd                         |     17 [32m+[m
+ node_modules/.bin/asar.ps1                         |     28 [32m+[m
+ node_modules/.bin/electron                         |     16 [32m+[m
+ node_modules/.bin/electron-osx-flat                |     16 [32m+[m
+ node_modules/.bin/electron-osx-flat.cmd            |     17 [32m+[m
+ node_modules/.bin/electron-osx-flat.ps1            |     28 [32m+[m
+ node_modules/.bin/electron-osx-sign                |     16 [32m+[m
+ node_modules/.bin/electron-osx-sign.cmd            |     17 [32m+[m
+ node_modules/.bin/electron-osx-sign.ps1            |     28 [32m+[m
+ node_modules/.bin/electron-packager                |     16 [32m+[m
+ node_modules/.bin/electron-packager.cmd            |     17 [32m+[m
+ node_modules/.bin/electron-packager.ps1            |     28 [32m+[m
+ node_modules/.bin/electron-windows-sign            |     16 [32m+[m
+ node_modules/.bin/electron-windows-sign.cmd        |     17 [32m+[m
+ node_modules/.bin/electron-windows-sign.ps1        |     28 [32m+[m
+ node_modules/.bin/electron.cmd                     |     17 [32m+[m
+ node_modules/.bin/electron.ps1                     |     28 [32m+[m
+ node_modules/.bin/extract-zip                      |     16 [32m+[m
+ node_modules/.bin/extract-zip.cmd                  |     17 [32m+[m
+ node_modules/.bin/extract-zip.ps1                  |     28 [32m+[m
+ node_modules/.bin/install-electron                 |     16 [32m+[m
+ node_modules/.bin/install-electron.cmd             |     17 [32m+[m
+ node_modules/.bin/install-electron.ps1             |     28 [32m+[m
+ node_modules/.bin/node-which                       |     16 [32m+[m
+ node_modules/.bin/node-which.cmd                   |     17 [32m+[m
+ node_modules/.bin/node-which.ps1                   |     28 [32m+[m
+ node_modules/.bin/postject                         |     16 [32m+[m
+ node_modules/.bin/postject.cmd                     |     17 [32m+[m
+ node_modules/.bin/postject.ps1                     |     28 [32m+[m
+ node_modules/.bin/prettier                         |     16 [32m+[m
+ node_modules/.bin/prettier.cmd                     |     17 [32m+[m
+ node_modules/.bin/prettier.ps1                     |     28 [32m+[m
+ node_modules/.bin/resolve                          |     16 [32m+[m
+ node_modules/.bin/resolve.cmd                      |     17 [32m+[m
+ node_modules/.bin/resolve.ps1                      |     28 [32m+[m
+ node_modules/.bin/semver                           |     16 [32m+[m
+ node_modules/.bin/semver.cmd                       |     17 [32m+[m
+ node_modules/.bin/semver.ps1                       |     28 [32m+[m
+ node_modules/.package-lock.json                    |   2150 [32m+[m
+ .../@electron-internal/extract-zip/README.md       |     94 [32m+[m
+ .../@electron-internal/extract-zip/binding.d.ts    |      8 [32m+[m
+ .../@electron-internal/extract-zip/binding.js      |    629 [32m+[m
+ .../@electron-internal/extract-zip/index.d.ts      |      8 [32m+[m
+ .../extract-zip/index.darwin-universal.node        |    Bin [31m0[m -> [32m1374112[m bytes
+ .../@electron-internal/extract-zip/index.js        |     23 [32m+[m
+ .../extract-zip/index.linux-arm-gnueabihf.node     |    Bin [31m0[m -> [32m691300[m bytes
+ .../extract-zip/index.linux-arm64-gnu.node         |    Bin [31m0[m -> [32m668408[m bytes
+ .../extract-zip/index.linux-arm64-musl.node        |    Bin [31m0[m -> [32m725720[m bytes
+ .../extract-zip/index.linux-ia32-gnu.node          |    Bin [31m0[m -> [32m784884[m bytes
+ .../extract-zip/index.linux-x64-gnu.node           |    Bin [31m0[m -> [32m762832[m bytes
+ .../extract-zip/index.linux-x64-musl.node          |    Bin [31m0[m -> [32m762656[m bytes
+ .../extract-zip/index.win32-arm64-msvc.node        |    Bin [31m0[m -> [32m640512[m bytes
+ .../extract-zip/index.win32-x64-msvc.node          |    Bin [31m0[m -> [32m870400[m bytes
+ .../@electron-internal/extract-zip/package.json    |     69 [32m+[m
+ node_modules/@electron/asar/LICENSE.md             |     20 [32m+[m
+ node_modules/@electron/asar/README.md              |    208 [32m+[m
+ node_modules/@electron/asar/bin/asar.js            |     82 [32m+[m
+ node_modules/@electron/asar/lib/asar.d.ts          |     96 [32m+[m
+ node_modules/@electron/asar/lib/asar.js            |    337 [32m+[m
+ node_modules/@electron/asar/lib/asar.js.map        |      1 [32m+[m
+ node_modules/@electron/asar/lib/crawlfs.d.ts       |     12 [32m+[m
+ node_modules/@electron/asar/lib/crawlfs.js         |     79 [32m+[m
+ node_modules/@electron/asar/lib/crawlfs.js.map     |      1 [32m+[m
+ node_modules/@electron/asar/lib/disk.d.ts          |     44 [32m+[m
+ node_modules/@electron/asar/lib/disk.js            |    219 [32m+[m
+ node_modules/@electron/asar/lib/disk.js.map        |      1 [32m+[m
+ node_modules/@electron/asar/lib/filesystem.d.ts    |     44 [32m+[m
+ node_modules/@electron/asar/lib/filesystem.js      |    199 [32m+[m
+ node_modules/@electron/asar/lib/filesystem.js.map  |      1 [32m+[m
+ node_modules/@electron/asar/lib/integrity.d.ts     |      7 [32m+[m
+ node_modules/@electron/asar/lib/integrity.js       |     75 [32m+[m
+ node_modules/@electron/asar/lib/integrity.js.map   |      1 [32m+[m
+ node_modules/@electron/asar/lib/pickle.d.ts        |     46 [32m+[m
+ node_modules/@electron/asar/lib/pickle.js          |    199 [32m+[m
+ node_modules/@electron/asar/lib/pickle.js.map      |      1 [32m+[m
+ node_modules/@electron/asar/lib/types/glob.d.ts    |    157 [32m+[m
+ node_modules/@electron/asar/lib/types/glob.js      |      3 [32m+[m
+ node_modules/@electron/asar/lib/types/glob.js.map  |      1 [32m+[m
+ node_modules/@electron/asar/lib/wrapped-fs.d.ts    |     13 [32m+[m
+ node_modules/@electron/asar/lib/wrapped-fs.js      |     26 [32m+[m
+ node_modules/@electron/asar/lib/wrapped-fs.js.map  |      1 [32m+[m
+ node_modules/@electron/asar/package.json           |     60 [32m+[m
+ node_modules/@electron/get/LICENSE                 |     21 [32m+[m
+ node_modules/@electron/get/README.md               |    147 [32m+[m
+ node_modules/@electron/get/dist/Cache.d.ts         |      9 [32m+[m
+ node_modules/@electron/get/dist/Cache.js           |     99 [32m+[m
+ node_modules/@electron/get/dist/Cache.js.map       |      1 [32m+[m
+ node_modules/@electron/get/dist/Downloader.d.ts    |     18 [32m+[m
+ node_modules/@electron/get/dist/Downloader.js      |      2 [32m+[m
+ node_modules/@electron/get/dist/Downloader.js.map  |      1 [32m+[m
+ .../@electron/get/dist/FetchDownloader.d.ts        |     43 [32m+[m
+ node_modules/@electron/get/dist/FetchDownloader.js |     82 [32m+[m
+ .../@electron/get/dist/FetchDownloader.js.map      |      1 [32m+[m
+ .../@electron/get/dist/artifact-utils.d.ts         |      4 [32m+[m
+ node_modules/@electron/get/dist/artifact-utils.js  |     54 [32m+[m
+ .../@electron/get/dist/artifact-utils.js.map       |      1 [32m+[m
+ .../@electron/get/dist/downloader-resolver.d.ts    |      3 [32m+[m
+ .../@electron/get/dist/downloader-resolver.js      |      5 [32m+[m
+ .../@electron/get/dist/downloader-resolver.js.map  |      1 [32m+[m
+ node_modules/@electron/get/dist/index.d.ts         |     27 [32m+[m
+ node_modules/@electron/get/dist/index.js           |    188 [32m+[m
+ node_modules/@electron/get/dist/index.js.map       |      1 [32m+[m
+ node_modules/@electron/get/dist/proxy.d.ts         |     14 [32m+[m
+ node_modules/@electron/get/dist/proxy.js           |     28 [32m+[m
+ node_modules/@electron/get/dist/proxy.js.map       |      1 [32m+[m
+ node_modules/@electron/get/dist/types.d.ts         |    244 [32m+[m
+ node_modules/@electron/get/dist/types.js           |     25 [32m+[m
+ node_modules/@electron/get/dist/types.js.map       |      1 [32m+[m
+ node_modules/@electron/get/dist/utils.d.ts         |     38 [32m+[m
+ node_modules/@electron/get/dist/utils.js           |    147 [32m+[m
+ node_modules/@electron/get/dist/utils.js.map       |      1 [32m+[m
+ node_modules/@electron/get/package.json            |     80 [32m+[m
+ node_modules/@electron/notarize/LICENSE            |      7 [32m+[m
+ node_modules/@electron/notarize/README.md          |    190 [32m+[m
+ .../@electron/notarize/lib/check-signature.d.ts    |      2 [32m+[m
+ .../@electron/notarize/lib/check-signature.js      |     80 [32m+[m
+ .../@electron/notarize/lib/check-signature.js.map  |      1 [32m+[m
+ node_modules/@electron/notarize/lib/helpers.d.ts   |     13 [32m+[m
+ node_modules/@electron/notarize/lib/helpers.js     |    106 [32m+[m
+ node_modules/@electron/notarize/lib/helpers.js.map |      1 [32m+[m
+ node_modules/@electron/notarize/lib/index.d.ts     |     20 [32m+[m
+ node_modules/@electron/notarize/lib/index.js       |     53 [32m+[m
+ node_modules/@electron/notarize/lib/index.js.map   |      1 [32m+[m
+ node_modules/@electron/notarize/lib/legacy.d.ts    |      5 [32m+[m
+ node_modules/@electron/notarize/lib/legacy.js      |     33 [32m+[m
+ node_modules/@electron/notarize/lib/legacy.js.map  |      1 [32m+[m
+ .../@electron/notarize/lib/notarytool.d.ts         |      3 [32m+[m
+ node_modules/@electron/notarize/lib/notarytool.js  |    160 [32m+[m
+ .../@electron/notarize/lib/notarytool.js.map       |      1 [32m+[m
+ node_modules/@electron/notarize/lib/spawn.d.ts     |      6 [32m+[m
+ node_modules/@electron/notarize/lib/spawn.js       |     32 [32m+[m
+ node_modules/@electron/notarize/lib/spawn.js.map   |      1 [32m+[m
+ node_modules/@electron/notarize/lib/staple.d.ts    |      2 [32m+[m
+ node_modules/@electron/notarize/lib/staple.js      |     57 [32m+[m
+ node_modules/@electron/notarize/lib/staple.js.map  |      1 [32m+[m
+ node_modules/@electron/notarize/lib/types.d.ts     |    169 [32m+[m
+ node_modules/@electron/notarize/lib/types.js       |      3 [32m+[m
+ node_modules/@electron/notarize/lib/types.js.map   |      1 [32m+[m
+ .../@electron/notarize/lib/validate-args.d.ts      |     14 [32m+[m
+ .../@electron/notarize/lib/validate-args.js        |    109 [32m+[m
+ .../@electron/notarize/lib/validate-args.js.map    |      1 [32m+[m
+ .../notarize/node_modules/fs-extra/CHANGELOG.md    |    902 [32m+[m
+ .../notarize/node_modules/fs-extra/LICENSE         |     15 [32m+[m
+ .../notarize/node_modules/fs-extra/README.md       |    264 [32m+[m
+ .../fs-extra/lib/copy-sync/copy-sync.js            |    166 [32m+[m
+ .../node_modules/fs-extra/lib/copy-sync/index.js   |      5 [32m+[m
+ .../node_modules/fs-extra/lib/copy/copy.js         |    232 [32m+[m
+ .../node_modules/fs-extra/lib/copy/index.js        |      6 [32m+[m
+ .../node_modules/fs-extra/lib/empty/index.js       |     48 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/file.js       |     69 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/index.js      |     23 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/link.js       |     61 [32m+[m
+ .../fs-extra/lib/ensure/symlink-paths.js           |     99 [32m+[m
+ .../fs-extra/lib/ensure/symlink-type.js            |     31 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/symlink.js    |     63 [32m+[m
+ .../notarize/node_modules/fs-extra/lib/fs/index.js |    130 [32m+[m
+ .../notarize/node_modules/fs-extra/lib/index.js    |     27 [32m+[m
+ .../node_modules/fs-extra/lib/json/index.js        |     16 [32m+[m
+ .../node_modules/fs-extra/lib/json/jsonfile.js     |     11 [32m+[m
+ .../fs-extra/lib/json/output-json-sync.js          |     12 [32m+[m
+ .../node_modules/fs-extra/lib/json/output-json.js  |     12 [32m+[m
+ .../node_modules/fs-extra/lib/mkdirs/index.js      |     14 [32m+[m
+ .../node_modules/fs-extra/lib/mkdirs/make-dir.js   |    141 [32m+[m
+ .../node_modules/fs-extra/lib/move-sync/index.js   |      5 [32m+[m
+ .../fs-extra/lib/move-sync/move-sync.js            |     47 [32m+[m
+ .../node_modules/fs-extra/lib/move/index.js        |      6 [32m+[m
+ .../node_modules/fs-extra/lib/move/move.js         |     65 [32m+[m
+ .../node_modules/fs-extra/lib/output/index.js      |     40 [32m+[m
+ .../node_modules/fs-extra/lib/path-exists/index.js |     12 [32m+[m
+ .../node_modules/fs-extra/lib/remove/index.js      |      9 [32m+[m
+ .../node_modules/fs-extra/lib/remove/rimraf.js     |    302 [32m+[m
+ .../node_modules/fs-extra/lib/util/stat.js         |    139 [32m+[m
+ .../node_modules/fs-extra/lib/util/utimes.js       |     26 [32m+[m
+ .../notarize/node_modules/fs-extra/package.json    |     70 [32m+[m
+ node_modules/@electron/notarize/package.json       |     47 [32m+[m
+ node_modules/@electron/osx-sign/LICENSE            |     24 [32m+[m
+ node_modules/@electron/osx-sign/README.md          |    282 [32m+[m
+ .../osx-sign/bin/electron-osx-flat-usage.txt       |     41 [32m+[m
+ .../@electron/osx-sign/bin/electron-osx-flat.js    |     34 [32m+[m
+ .../osx-sign/bin/electron-osx-sign-usage.txt       |     60 [32m+[m
+ .../@electron/osx-sign/bin/electron-osx-sign.js    |     46 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/flat.d.ts |     15 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/flat.js   |    179 [32m+[m
+ .../@electron/osx-sign/dist/cjs/flat.js.map        |      1 [32m+[m
+ .../@electron/osx-sign/dist/cjs/index.d.ts         |      5 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/index.js  |     39 [32m+[m
+ .../@electron/osx-sign/dist/cjs/index.js.map       |      1 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/sign.d.ts |     15 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/sign.js   |    377 [32m+[m
+ .../@electron/osx-sign/dist/cjs/sign.js.map        |      1 [32m+[m
+ .../@electron/osx-sign/dist/cjs/types.d.ts         |    258 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/types.js  |      3 [32m+[m
+ .../@electron/osx-sign/dist/cjs/types.js.map       |      1 [32m+[m
+ .../osx-sign/dist/cjs/util-entitlements.d.ts       |     17 [32m+[m
+ .../osx-sign/dist/cjs/util-entitlements.js         |    133 [32m+[m
+ .../osx-sign/dist/cjs/util-entitlements.js.map     |      1 [32m+[m
+ .../osx-sign/dist/cjs/util-identities.d.ts         |      6 [32m+[m
+ .../@electron/osx-sign/dist/cjs/util-identities.js |     35 [32m+[m
+ .../osx-sign/dist/cjs/util-identities.js.map       |      1 [32m+[m
+ .../dist/cjs/util-provisioning-profiles.d.ts       |     25 [32m+[m
+ .../dist/cjs/util-provisioning-profiles.js         |    148 [32m+[m
+ .../dist/cjs/util-provisioning-profiles.js.map     |      1 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/util.d.ts |     36 [32m+[m
+ node_modules/@electron/osx-sign/dist/cjs/util.js   |    183 [32m+[m
+ .../@electron/osx-sign/dist/cjs/util.js.map        |      1 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/flat.d.ts |     15 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/flat.js   |    151 [32m+[m
+ .../@electron/osx-sign/dist/esm/flat.js.map        |      1 [32m+[m
+ .../@electron/osx-sign/dist/esm/index.d.ts         |      5 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/index.js  |     16 [32m+[m
+ .../@electron/osx-sign/dist/esm/index.js.map       |      1 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/sign.d.ts |     15 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/sign.js   |    346 [32m+[m
+ .../@electron/osx-sign/dist/esm/sign.js.map        |      1 [32m+[m
+ .../@electron/osx-sign/dist/esm/types.d.ts         |    258 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/types.js  |      2 [32m+[m
+ .../@electron/osx-sign/dist/esm/types.js.map       |      1 [32m+[m
+ .../osx-sign/dist/esm/util-entitlements.d.ts       |     17 [32m+[m
+ .../osx-sign/dist/esm/util-entitlements.js         |    106 [32m+[m
+ .../osx-sign/dist/esm/util-entitlements.js.map     |      1 [32m+[m
+ .../osx-sign/dist/esm/util-identities.d.ts         |      6 [32m+[m
+ .../@electron/osx-sign/dist/esm/util-identities.js |     30 [32m+[m
+ .../osx-sign/dist/esm/util-identities.js.map       |      1 [32m+[m
+ .../dist/esm/util-provisioning-profiles.d.ts       |     25 [32m+[m
+ .../dist/esm/util-provisioning-profiles.js         |    115 [32m+[m
+ .../dist/esm/util-provisioning-profiles.js.map     |      1 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/util.d.ts |     36 [32m+[m
+ node_modules/@electron/osx-sign/dist/esm/util.js   |    146 [32m+[m
+ .../@electron/osx-sign/dist/esm/util.js.map        |      1 [32m+[m
+ .../osx-sign/entitlements/default.darwin.gpu.plist |      8 [32m+[m
+ .../osx-sign/entitlements/default.darwin.plist     |     20 [32m+[m
+ .../entitlements/default.darwin.plugin.plist       |     10 [32m+[m
+ .../entitlements/default.darwin.renderer.plist     |      8 [32m+[m
+ .../osx-sign/entitlements/default.mas.child.plist  |     10 [32m+[m
+ .../osx-sign/entitlements/default.mas.plist        |     22 [32m+[m
+ .../osx-sign/node_modules/fs-extra/LICENSE         |     15 [32m+[m
+ .../osx-sign/node_modules/fs-extra/README.md       |    262 [32m+[m
+ .../node_modules/fs-extra/lib/copy/copy-sync.js    |    169 [32m+[m
+ .../node_modules/fs-extra/lib/copy/copy.js         |    235 [32m+[m
+ .../node_modules/fs-extra/lib/copy/index.js        |      7 [32m+[m
+ .../node_modules/fs-extra/lib/empty/index.js       |     39 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/file.js       |     69 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/index.js      |     23 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/link.js       |     64 [32m+[m
+ .../fs-extra/lib/ensure/symlink-paths.js           |     99 [32m+[m
+ .../fs-extra/lib/ensure/symlink-type.js            |     31 [32m+[m
+ .../node_modules/fs-extra/lib/ensure/symlink.js    |     82 [32m+[m
+ .../osx-sign/node_modules/fs-extra/lib/fs/index.js |    128 [32m+[m
+ .../osx-sign/node_modules/fs-extra/lib/index.js    |     16 [32m+[m
+ .../node_modules/fs-extra/lib/json/index.js        |     16 [32m+[m
+ .../node_modules/fs-extra/lib/json/jsonfile.js     |     11 [32m+[m
+ .../fs-extra/lib/json/output-json-sync.js          |     12 [32m+[m
+ .../node_modules/fs-extra/lib/json/output-json.js  |     12 [32m+[m
+ .../node_modules/fs-extra/lib/mkdirs/index.js      |     14 [32m+[m
+ .../node_modules/fs-extra/lib/mkdirs/make-dir.js   |     27 [32m+[m
+ .../node_modules/fs-extra/lib/mkdirs/utils.js      |     21 [32m+[m
+ .../node_modules/fs-extra/lib/move/index.js        |      7 [32m+[m
+ .../node_modules/fs-extra/lib/move/move-sync.js    |     54 [32m+[m
+ .../node_modules/fs-extra/lib/move/move.js         |     75 [32m+[m
+ .../node_modules/fs-extra/lib/output-file/index.js |     40 [32m+[m
+ .../node_modules/fs-extra/lib/path-exists/index.js |     12 [32m+[m
+ .../node_modules/fs-extra/lib/remove/index.js      |     22 [32m+[m
+ .../node_modules/fs-extra/lib/remove/rimraf.js     |    302 [32m+[m
+ .../node_modules/fs-extra/lib/util/stat.js         |    154 [32m+[m
+ .../node_modules/fs-extra/lib/util/utimes.js       |     26 [32m+[m
+ .../osx-sign/node_modules/fs-extra/package.json    |     67 [32m+[m
+ node_modules/@electron/osx-sign/package.json       |     80 [32m+[m
+ node_modules/@electron/packager/LICENSE            |     23 [32m+[m
+ node_modules/@electron/packager/README.md          |    208 [32m+[m
+ .../@electron/packager/bin/electron-packager.js    |     18 [32m+[m
+ node_modules/@electron/packager/collaborators.md   |      8 [32m+[m
+ node_modules/@electron/packager/dist/cli.d.ts      |      3 [32m+[m
+ node_modules/@electron/packager/dist/cli.js        |    139 [32m+[m
+ node_modules/@electron/packager/dist/cli.js.map    |      1 [32m+[m
+ node_modules/@electron/packager/dist/common.d.ts   |     29 [32m+[m
+ node_modules/@electron/packager/dist/common.js     |    117 [32m+[m
+ node_modules/@electron/packager/dist/common.js.map |      1 [32m+[m
+ .../@electron/packager/dist/copy-filter.d.ts       |      5 [32m+[m
+ .../@electron/packager/dist/copy-filter.js         |    102 [32m+[m
+ .../@electron/packager/dist/copy-filter.js.map     |      1 [32m+[m
+ node_modules/@electron/packager/dist/download.d.ts |      4 [32m+[m
+ node_modules/@electron/packager/dist/download.js   |     39 [32m+[m
+ .../@electron/packager/dist/download.js.map        |      1 [32m+[m
+ node_modules/@electron/packager/dist/hooks.d.ts    |     29 [32m+[m
+ node_modules/@electron/packager/dist/hooks.js      |     49 [32m+[m
+ node_modules/@electron/packager/dist/hooks.js.map  |      1 [32m+[m
+ .../@electron/packager/dist/icon-composer.d.ts     | 

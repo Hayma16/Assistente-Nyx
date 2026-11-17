@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:" />
+    <title>Assistente de Eventos</title>
+    <link rel="stylesheet" href="../styles/estilo.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Lado esquerdo: o chat -->
+      <div class="chat">
+        <header class="chat-topo">
+          <div id="avatar-topo"></div>
+          <div>
+            <h1 id="nome" class="nome"></h1>
+            <p class="status">online</p>
+          </div>
+        </header>
+
+        <main id="mensagens" class="mensagens"></main>
+
+        <form id="formulario" class="chat-entrada">
+          <input id="texto" type="text" placeholder="Escreva uma mensagem..." autocomplete="off" />
+          <button type="submit" aria-label="Enviar">➤</button>
+        </form>
+      </div>
+
+      <!-- Lado direito: o painel de tarefas -->
+      <aside class="painel">
+        <div class="painel-topo">
+          <h2>Minhas tarefas</h2>
+          <div class="abas">
+            <button type="button" class="aba ativa" data-aba="pendentes">
+              Pendentes <span id="contador-pendentes" class="contador">0</span>
+            </button>
+            <button type="button" class="aba" data-aba="concluidas">
+              Concluídas <span id="contador-concluidas" class="contador">0</span>
+            </button>
+          </div>
+        </div>
+        <ul id="painel-lista" class="painel-lista"></ul>
+      </aside>
+    </div>
+
+    <script src="../armazenamento/armazenamento.js"></script>
+    <script src="renderer.js"></script>
+    <script src="../lembretes/lembretes.js"></script>
+  </body>
+</html>
